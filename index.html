@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanguard Medical Instruments — Precision Surgical Instruments</title>
+<meta name="description" content="Vanguard Medical Instruments — premium surgical instruments manufactured for precision, durability and trust. ISO 13485, CE & GMP certified. Serving healthcare professionals worldwide.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M10 12 L50 88 L58 88 L94 12 L78 12 L54 62 L26 12 Z' fill='%230B2340'/%3E%3Cpath d='M62 12 L94 12 L58 88 L50 88 Z' fill='%232F8FD1'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --navy-950:#071324;
+  --navy-900:#0b2340;
+  --navy-800:#123259;
+  --navy-700:#1a4278;
+  --steel-500:#2f8fd1;
+  --steel-400:#4fa8e0;
+  --steel-300:#8fcbee;
+  --ink-100:#f4f7fa;
+  --ink-050:#fbfcfd;
+  --silver-200:#dbe4ea;
+  --silver-300:#c4d0da;
+  --slate-600:#55677c;
+  --slate-500:#6d7f93;
+  --ok-green:#1e8f5f;
+  --warn-red:#c1422e;
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'IBM Plex Sans',sans-serif;
+  --font-mono:'IBM Plex Mono',monospace;
+  --shadow-card:0 1px 2px rgba(11,35,64,.06),0 8px 24px rgba(11,35,64,.08);
+  --shadow-lift:0 20px 50px rgba(11,35,64,.18);
+  --radius:10px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:var(--navy-900);
+  background:var(--ink-100);
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px;}
+h1,h2,h3,h4{font-family:var(--font-display);margin:0;letter-spacing:-0.01em;}
+:focus-visible{outline:2px solid var(--steel-500);outline-offset:3px;}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important;}}
+
+/* eyebrow / label */
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--steel-500);
+  font-weight:600;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.eyebrow::before{content:'';width:16px;height:1px;background:var(--steel-500);}
+
+/* ============ SIGNATURE: CALIPER RULE DIVIDER ============ */
+.tick-rule{
+  width:100%;
+  height:26px;
+  display:block;
+  background:var(--navy-950);
+}
+.tick-rule svg{width:100%;height:100%;display:block;}
+
+.section-head{margin-bottom:44px;max-width:640px;}
+.section-head h2{font-size:clamp(28px,3.4vw,40px);margin-top:14px;color:var(--navy-900);}
+.section-head p{color:var(--slate-600);font-size:16px;line-height:1.65;margin-top:14px;}
+
+/* ============ NAV ============ */
+header.site-nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(251,252,253,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--silver-200);
+}
+.nav-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand svg{width:34px;height:34px;flex-shrink:0;}
+.brand-text{line-height:1.05;}
+.brand-text .name{font-family:var(--font-display);font-weight:700;font-size:17px;color:var(--navy-900);letter-spacing:.01em;}
+.brand-text .sub{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;color:var(--steel-500);font-weight:600;}
+nav.links{display:flex;gap:30px;align-items:center;}
+nav.links a{font-size:14.5px;font-weight:500;color:var(--navy-800);padding:6px 2px;border-bottom:2px solid transparent;transition:border-color .15s,color .15s;}
+nav.links a:hover{color:var(--steel-500);border-color:var(--steel-300);}
+.nav-actions{display:flex;align-items:center;gap:14px;}
+.icon-btn{
+  position:relative;width:40px;height:40px;border-radius:50%;
+  border:1px solid var(--silver-300);background:var(--ink-050);
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s,border-color .15s;
+}
+.icon-btn:hover{background:var(--silver-200);border-color:var(--slate-500);}
+.icon-btn svg{width:18px;height:18px;stroke:var(--navy-900);}
+.cart-badge{
+  position:absolute;top:-5px;right:-5px;background:var(--steel-500);color:#fff;
+  font-family:var(--font-mono);font-size:10px;font-weight:600;
+  min-width:17px;height:17px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;padding:0 3px;
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:600;font-size:14px;padding:12px 22px;border-radius:6px;border:1px solid transparent;
+  transition:transform .15s, background .15s, border-color .15s, color .15s;
+  white-space:nowrap;
+}
+.btn:active{transform:translateY(1px);}
+.btn-primary{background:var(--steel-500);color:#fff;}
+.btn-primary:hover{background:var(--steel-400);}
+.btn-outline{background:transparent;color:var(--ink-050);border-color:rgba(255,255,255,.4);}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08);}
+.btn-dark{background:var(--navy-900);color:#fff;}
+.btn-dark:hover{background:var(--navy-800);}
+.btn-ghost{background:transparent;color:var(--navy-900);border-color:var(--silver-300);}
+.btn-ghost:hover{border-color:var(--navy-900);}
+.btn-wa{background:#1ea952;color:#fff;}
+.btn-wa:hover{background:#189045;}
+.btn-block{width:100%;}
+.hamburger{display:none;width:40px;height:40px;border-radius:8px;border:1px solid var(--silver-300);background:var(--ink-050);align-items:center;justify-content:center;}
+.hamburger svg{width:20px;height:20px;}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  min-height:640px;
+  display:flex;align-items:center;
+  background:var(--navy-950);
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:url('https://images.pexels.com/photos/19217003/pexels-photo-19217003.jpeg?auto=compress&cs=tinysrgb&w=1920');
+  background-size:cover;background-position:center 40%;
+  opacity:.55;
+}
+.hero-scrim{
+  position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(7,19,36,.97) 18%,rgba(7,19,36,.78) 48%,rgba(7,19,36,.35) 78%);
+}
+.hero-inner{position:relative;z-index:2;padding:110px 0 90px;}
+.hero-inner .eyebrow{color:var(--steel-300);}
+.hero-inner .eyebrow::before{background:var(--steel-300);}
+.hero h1{
+  font-size:clamp(34px,5.2vw,60px);
+  color:var(--ink-050);
+  line-height:1.06;
+  max-width:760px;
+  margin-top:18px;
+}
+.hero h1 .accent{color:var(--steel-300);}
+.hero p{
+  color:var(--silver-200);
+  font-size:17px;line-height:1.65;
+  max-width:520px;margin-top:22px;
+}
+.hero-ctas{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+.hero-meta{
+  display:flex;gap:36px;margin-top:64px;flex-wrap:wrap;
+}
+.hero-meta div{border-left:2px solid var(--steel-500);padding-left:14px;}
+.hero-meta .num{font-family:var(--font-mono);font-size:22px;font-weight:600;color:#fff;}
+.hero-meta .lbl{font-size:12.5px;color:var(--silver-300);margin-top:2px;}
+
+/* ============ FEATURES ============ */
+.features{background:var(--navy-900);padding:34px 0;}
+.features .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.feature{display:flex;gap:14px;align-items:flex-start;}
+.feature .ico{
+  width:42px;height:42px;border-radius:9px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.14);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.feature .ico svg{width:20px;height:20px;stroke:var(--steel-300);}
+.feature h4{color:#fff;font-size:14.5px;font-weight:600;}
+.feature p{color:var(--silver-300);font-size:12.5px;margin-top:3px;line-height:1.5;}
+
+/* ============ SECTIONS GENERAL ============ */
+section{padding:88px 0;}
+.bleed-light{background:var(--ink-050);}
+
+/* ============ PRODUCTS ============ */
+.products-layout{display:grid;grid-template-columns:230px 1fr;gap:44px;align-items:start;}
+.cat-list{
+  position:sticky;top:90px;
+  border-left:2px solid var(--silver-200);
+}
+.cat-item{
+  display:flex;justify-content:space-between;align-items:center;
+  width:100%;text-align:left;padding:11px 16px;
+  font-size:14px;color:var(--slate-600);font-weight:500;
+  border-left:2px solid transparent;margin-left:-2px;
+  background:transparent;
+  transition:color .15s,border-color .15s,background .15s;
+}
+.cat-item .cnt{font-family:var(--font-mono);font-size:11px;color:var(--slate-500);}
+.cat-item:hover{color:var(--navy-900);background:var(--silver-200);}
+.cat-item.active{color:var(--navy-900);font-weight:600;border-left-color:var(--steel-500);background:var(--ink-100);}
+
+.cat-chips{display:none;gap:8px;overflow-x:auto;padding-bottom:10px;margin-bottom:22px;}
+.cat-chip{
+  flex-shrink:0;font-size:13px;font-weight:500;padding:8px 14px;border-radius:20px;
+  border:1px solid var(--silver-300);color:var(--slate-600);background:#fff;white-space:nowrap;
+}
+.cat-chip.active{background:var(--navy-900);color:#fff;border-color:var(--navy-900);}
+
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.product-card{
+  background:#fff;border:1px solid var(--silver-200);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow-card);
+  display:flex;flex-direction:column;
+  transition:transform .18s, box-shadow .18s;
+}
+.product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift);}
+.product-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--navy-950);cursor:pointer;}
+.product-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.product-card:hover .product-media img{transform:scale(1.06);}
+.sku-tag{
+  position:absolute;top:10px;left:10px;background:rgba(7,19,36,.82);color:var(--steel-300);
+  font-family:var(--font-mono);font-size:10.5px;padding:4px 8px;border-radius:4px;letter-spacing:.03em;
+}
+.product-body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:10px;flex:1;}
+.product-cat{font-family:var(--font-mono);font-size:10.5px;color:var(--steel-500);text-transform:uppercase;letter-spacing:.08em;font-weight:600;}
+.product-body h3{font-size:16.5px;font-weight:600;color:var(--navy-900);}
+.product-body .desc{font-size:13px;color:var(--slate-600);line-height:1.5;flex:1;}
+.product-foot{display:flex;align-items:center;justify-content:space-between;margin-top:4px;}
+.price{font-family:var(--font-mono);font-weight:600;font-size:15px;color:var(--navy-900);}
+.price span{font-size:11px;color:var(--slate-500);font-weight:400;}
+.product-btns{display:flex;gap:8px;margin-top:6px;}
+.btn-sm{padding:9px 12px;font-size:12.5px;flex:1;border-radius:6px;}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;}
+.about-media{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lift);}
+.about-media img{aspect-ratio:6/5;object-fit:cover;}
+.about-media::after{
+  content:'';position:absolute;inset:0;
+  border:1px solid rgba(255,255,255,.25);border-radius:var(--radius);
+}
+.about-tagbox{
+  position:absolute;bottom:18px;left:18px;background:var(--navy-950);color:#fff;
+  padding:12px 16px;border-radius:8px;font-family:var(--font-mono);font-size:11.5px;
+  display:flex;align-items:center;gap:8px;
+}
+.about-tagbox .dot{width:7px;height:7px;border-radius:50%;background:var(--ok-green);}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px;}
+.stat{border-top:2px solid var(--steel-500);padding-top:12px;}
+.stat .n{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--navy-900);}
+.stat .l{font-size:12px;color:var(--slate-600);margin-top:2px;}
+
+/* ============ QUALITY ============ */
+.quality{background:var(--navy-950);color:#fff;}
+.quality .eyebrow{color:var(--steel-300);}
+.quality .eyebrow::before{background:var(--steel-300);}
+.quality .section-head h2{color:#fff;}
+.quality .section-head p{color:var(--silver-300);}
+.quality-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.quality-media{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.14);}
+.quality-media img{aspect-ratio:5/4;object-fit:cover;}
+.cert-row{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+.cert{
+  display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 16px;
+}
+.cert .ico2{width:32px;height:32px;border-radius:50%;background:var(--steel-500);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cert .ico2 svg{width:16px;height:16px;stroke:#fff;}
+.cert .t1{font-size:13px;font-weight:600;color:#fff;}
+.cert .t2{font-size:11px;color:var(--silver-300);}
+.quality-list{list-style:none;padding:0;margin:26px 0 0;display:flex;flex-direction:column;gap:14px;}
+.quality-list li{display:flex;gap:12px;font-size:14.5px;color:var(--silver-200);line-height:1.5;}
+.quality-list li svg{width:18px;height:18px;stroke:var(--steel-300);flex-shrink:0;margin-top:2px;}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;}
+.contact-card{background:#fff;border:1px solid var(--silver-200);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-card);}
+.contact-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--silver-200);}
+.contact-item:last-child{border-bottom:none;}
+.contact-item .ico3{width:38px;height:38px;border-radius:8px;background:var(--ink-100);border:1px solid var(--silver-300);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.contact-item .ico3 svg{width:17px;height:17px;stroke:var(--steel-500);}
+.contact-item .t1{font-size:12px;color:var(--slate-500);font-family:var(--font-mono);letter-spacing:.04em;text-transform:uppercase;}
+.contact-item .t2{font-size:14.5px;color:var(--navy-900);font-weight:500;margin-top:3px;}
+.form-card{background:var(--navy-950);border-radius:var(--radius);padding:32px;color:#fff;}
+.form-card h3{color:#fff;font-size:20px;}
+.form-card p.sub{color:var(--silver-300);font-size:13.5px;margin-top:8px;}
+.field{margin-top:16px;}
+.field label{display:block;font-size:12px;color:var(--silver-300);margin-bottom:6px;font-family:var(--font-mono);letter-spacing:.03em;}
+.field input,.field textarea{
+  width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);
+  border-radius:6px;padding:11px 13px;color:#fff;font-family:var(--font-body);font-size:14px;
+}
+.field input::placeholder,.field textarea::placeholder{color:var(--slate-500);}
+.field textarea{resize:vertical;min-height:90px;}
+.form-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;}
+
+/* ============ FOOTER ============ */
+footer{background:var(--navy-900);color:var(--silver-300);padding:60px 0 26px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;}
+.footer-brand .brand-text .name{color:#fff;}
+footer p.tag{font-size:13px;color:var(--slate-500);margin-top:14px;line-height:1.6;max-width:280px;}
+footer h5{font-size:12.5px;color:#fff;text-transform:uppercase;letter-spacing:.08em;font-family:var(--font-mono);margin-bottom:16px;}
+footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;}
+footer ul a{font-size:13.5px;color:var(--silver-300);}
+footer ul a:hover{color:var(--steel-300);}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);margin-top:50px;padding-top:22px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  font-size:12.5px;color:var(--slate-500);
+}
+
+/* ============ CART DRAWER ============ */
+.overlay{position:fixed;inset:0;background:rgba(7,19,36,.55);z-index:90;opacity:0;pointer-events:none;transition:opacity .25s;}
+.overlay.show{opacity:1;pointer-events:auto;}
+.drawer{
+  position:fixed;top:0;right:0;height:100%;width:420px;max-width:92vw;background:#fff;z-index:95;
+  transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.9,.3,1);
+  display:flex;flex-direction:column;box-shadow:-10px 0 40px rgba(0,0,0,.2);
+}
+.drawer.show{transform:translateX(0);}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid var(--silver-200);}
+.drawer-head h3{font-size:18px;}
+.drawer-close{width:34px;height:34px;border-radius:50%;border:1px solid var(--silver-300);background:var(--ink-050);display:flex;align-items:center;justify-content:center;}
+.drawer-close svg{width:15px;height:15px;}
+.drawer-body{flex:1;overflow-y:auto;padding:18px 22px;}
+.cart-empty{text-align:center;color:var(--slate-500);padding:60px 10px;font-size:14px;}
+.cart-row{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--silver-200);}
+.cart-row img{width:64px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;}
+.cart-row-info{flex:1;}
+.cart-row-info .nm{font-size:13.5px;font-weight:600;color:var(--navy-900);}
+.cart-row-info .pr{font-family:var(--font-mono);font-size:12.5px;color:var(--slate-600);margin-top:2px;}
+.qty-box{display:flex;align-items:center;gap:8px;margin-top:8px;}
+.qty-box button{width:24px;height:24px;border-radius:5px;border:1px solid var(--silver-300);background:var(--ink-100);font-size:14px;line-height:1;}
+.qty-box span{font-family:var(--font-mono);font-size:13px;min-width:16px;text-align:center;}
+.remove-link{font-size:11.5px;color:var(--warn-red);margin-left:auto;text-decoration:underline;align-self:flex-start;}
+.drawer-foot{border-top:1px solid var(--silver-200);padding:18px 22px 24px;}
+.total-row{display:flex;justify-content:space-between;font-size:15px;font-weight:600;margin-bottom:14px;}
+.total-row span:last-child{font-family:var(--font-mono);}
+.checkout-note{font-size:11.5px;color:var(--slate-500);margin-top:10px;line-height:1.5;}
+
+/* ============ PRODUCT MODAL ============ */
+.modal{
+  position:fixed;inset:0;z-index:98;display:flex;align-items:center;justify-content:center;padding:24px;
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.modal.show{opacity:1;pointer-events:auto;}
+.modal-card{
+  background:#fff;border-radius:14px;max-width:840px;width:100%;max-height:88vh;overflow:hidden;
+  display:grid;grid-template-columns:1fr 1fr;box-shadow:0 30px 80px rgba(0,0,0,.35);
+}
+.modal-media{position:relative;background:var(--navy-950);}
+.modal-media img{width:100%;height:100%;object-fit:cover;min-height:300px;}
+.modal-info{padding:30px 30px 26px;overflow-y:auto;}
+.modal-close{position:absolute;top:14px;right:14px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(7,19,36,.7);border:none;display:flex;align-items:center;justify-content:center;}
+.modal-close svg{width:16px;height:16px;stroke:#fff;}
+.modal-info .product-cat{margin-bottom:8px;display:block;}
+.modal-info h2{font-size:24px;margin-bottom:10px;}
+.modal-info .desc{color:var(--slate-600);font-size:14.5px;line-height:1.65;}
+.spec-list{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:8px;}
+.spec-list li{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px dashed var(--silver-200);}
+.spec-list li b{font-weight:600;color:var(--navy-900);}
+.spec-list li span{color:var(--slate-600);font-family:var(--font-mono);font-size:12.5px;}
+.modal-price{font-family:var(--font-mono);font-size:22px;font-weight:600;margin:16px 0 18px;}
+.modal-btns{display:flex;flex-direction:column;gap:10px;}
+.modal-btns .row{display:flex;gap:10px;}
+
+/* ============ TOAST ============ */
+.toast{
+  position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--navy-950);color:#fff;padding:14px 22px;border-radius:8px;font-size:14px;
+  display:flex;align-items:center;gap:10px;z-index:120;opacity:0;pointer-events:none;
+  transition:opacity .25s, transform .25s;box-shadow:0 12px 30px rgba(0,0,0,.3);
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+.toast svg{width:17px;height:17px;stroke:var(--ok-green);flex-shrink:0;}
+
+/* ============ WHATSAPP FAB ============ */
+.wa-fab{
+  position:fixed;bottom:26px;right:26px;width:58px;height:58px;border-radius:50%;
+  background:#1ea952;display:flex;align-items:center;justify-content:center;z-index:70;
+  box-shadow:0 10px 30px rgba(30,169,82,.45);transition:transform .2s;
+}
+.wa-fab:hover{transform:scale(1.08);}
+.wa-fab svg{width:28px;height:28px;fill:#fff;}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:980px){
+  .about-grid,.quality-grid,.contact-grid{grid-template-columns:1fr;}
+  .about-grid{gap:34px;}
+  .stat-grid{grid-template-columns:repeat(4,1fr);}
+  .products-layout{grid-template-columns:1fr;}
+  .cat-list{display:none;}
+  .cat-chips{display:flex;}
+  .product-grid{grid-template-columns:repeat(2,1fr);}
+  .modal-card{grid-template-columns:1fr;max-height:92vh;}
+  .modal-media img{min-height:220px;}
+  .features .wrap{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:760px){
+  nav.links{position:fixed;top:69px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;
+    padding:18px 28px 26px;border-bottom:1px solid var(--silver-200);gap:4px;
+    transform:translateY(-130%);transition:transform .25s;z-index:59;max-height:80vh;overflow-y:auto;}
+  nav.links.show{transform:translateY(0);}
+  nav.links a{width:100%;padding:12px 0;border-bottom:1px solid var(--silver-200);}
+  .hamburger{display:flex;}
+  .nav-actions .btn-primary span.long{display:none;}
+  .hero-meta{gap:22px;}
+  .hero-meta div{padding-left:10px;}
+  .product-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px;}
+  section{padding:64px 0;}
+  .drawer{width:100%;}
+}
+@media(max-width:520px){
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .stat-grid{grid-template-columns:1fr 1fr;gap:22px 18px;}
+  .hero-inner{padding:80px 0 60px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="wrap nav-row">
+    <a href="#home" class="brand">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M10 12 L50 88 L58 88 L94 12 L78 12 L54 62 L26 12 Z" fill="#0B2340"/>
+        <path d="M62 12 L94 12 L58 88 L50 88 Z" fill="#2F8FD1"/>
+      </svg>
+      <span class="brand-text">
+        <div class="name">VANGUARD</div>
+        <div class="sub">MEDICAL INSTRUMENTS</div>
+      </span>
+    </a>
+
+    <nav class="links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#quality">Quality</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="cart-badge" id="cartBadge" style="display:none">0</span>
+      </button>
+      <a class="btn btn-primary" id="quoteBtn" href="#"><span class="long">Get a Quote</span><span class="short" style="display:none">Quote</span></a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0B2340" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero" style="padding:0;">
+  <div class="hero-bg"></div>
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Lahore, Pakistan · Since Establishment</span>
+    <h1>Precision in Every Instrument.<br>Trust in Every <span class="accent">Procedure.</span></h1>
+    <p>Vanguard Medical Instruments manufactures high-quality surgical instruments engineered for accuracy, durability and sterilization safety — trusted by healthcare professionals worldwide.</p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn btn-primary">Explore Products</a>
+      <a href="#" class="btn btn-outline" id="heroQuoteBtn">Get a Quote</a>
+    </div>
+    <div class="hero-meta">
+      <div><div class="num">10+</div><div class="lbl">Years of Excellence</div></div>
+      <div><div class="num">1000+</div><div class="lbl">Products</div></div>
+      <div><div class="num">50+</div><div class="lbl">Countries Served</div></div>
+      <div><div class="num">100%</div><div class="lbl">Quality Checked</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- signature caliper rule -->
+<div class="tick-rule" aria-hidden="true">
+  <svg preserveAspectRatio="none" viewBox="0 0 1000 26"><line x1="0" y1="1" x2="1000" y2="1" stroke="#1a4278" stroke-width="1"/><g stroke="#2f8fd1" stroke-width="1.4"></g></svg>
+</div>
+<script>
+(function(){
+  const svg = document.querySelector('.tick-rule svg g');
+  let s = '';
+  for(let x=0;x<=1000;x+=10){
+    const tall = x % 100 === 0;
+    const h = tall ? 18 : (x % 50 === 0 ? 12 : 6);
+    s += `<line x1="${x}" y1="1" x2="${x}" y2="${1+h}"></line>`;
+  }
+  svg.innerHTML = s;
+})();
+</script>
+
+<!-- ============ FEATURES ============ -->
+<div class="features">
+  <div class="wrap">
+    <div class="feature">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-9 13-5-5"></path><path d="M3 7l4 4L20 3"></path></svg></div>
+      <div><h4>Premium Quality</h4><p>Made from high grade surgical stainless steel</p></div>
+    </div>
+    <div class="feature">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle></svg></div>
+      <div><h4>Precision</h4><p>Engineered for accuracy and reliability</p></div>
+    </div>
+    <div class="feature">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"></path></svg></div>
+      <div><h4>Durable</h4><p>Built to last, sterilization safe</p></div>
+    </div>
+    <div class="feature">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="3" y1="12" x2="21" y2="12"></line><path d="M12 3a14 14 0 010 18 14 14 0 010-18z"></path></svg></div>
+      <div><h4>Trusted Globally</h4><p>Serving healthcare professionals worldwide</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products" class="bleed-light">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Catalog</span>
+      <h2>Our Products</h2>
+      <p>A wide range of high quality surgical instruments designed for all medical specialties — click any instrument for full specs.</p>
+    </div>
+
+    <div class="cat-chips" id="catChips"></div>
+
+    <div class="products-layout">
+      <div class="cat-list" id="catList"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <img src="https://images.pexels.com/photos/32845692/pexels-photo-32845692.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Vanguard Medical Instruments manufacturing facility floor">
+      <div class="about-tagbox"><span class="dot"></span> ISO 13485:2016 Facility</div>
+    </div>
+    <div>
+      <span class="eyebrow">About Us</span>
+      <h2 style="font-size:clamp(26px,3vw,36px);margin-top:14px;">Manufacturing trust, one instrument at a time</h2>
+      <p style="color:var(--slate-600);font-size:15.5px;line-height:1.75;margin-top:16px;">
+        Vanguard Medical Instruments is a leading manufacturer and supplier of premium quality surgical instruments. With a commitment to precision, quality and customer satisfaction, we serve healthcare professionals worldwide — from independent clinics to large hospital procurement teams.
+      </p>
+      <p style="color:var(--slate-600);font-size:15.5px;line-height:1.75;margin-top:14px;">
+        Every instrument that leaves our facility in Lahore is forged, ground, and inspected against strict tolerances, then sterilization-tested before it reaches your tray.
+      </p>
+      <div class="stat-grid">
+        <div class="stat"><div class="n">10+</div><div class="l">Years of Excellence</div></div>
+        <div class="stat"><div class="n">1000+</div><div class="l">Products</div></div>
+        <div class="stat"><div class="n">50+</div><div class="l">Countries Served</div></div>
+        <div class="stat"><div class="n">100%</div><div class="l">Quality Assured</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUALITY ============ -->
+<section id="quality" class="quality">
+  <div class="wrap quality-grid">
+    <div>
+      <span class="eyebrow">Quality Assurance</span>
+      <h2 style="font-size:clamp(26px,3vw,36px);margin-top:14px;color:#fff;">Every instrument, checked at every stage</h2>
+      <p style="color:var(--silver-300);font-size:15.5px;line-height:1.75;margin-top:16px;">We follow strict quality control standards at every stage of manufacturing to ensure superior performance and patient safety.</p>
+      <ul class="quality-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg> Raw material inspection with certified stainless steel grades</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg> In-process dimensional and hardness checks</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg> Final sterilization-safety and finish inspection</li>
+      </ul>
+      <div class="cert-row">
+        <div class="cert"><div class="ico2"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg></div><div><div class="t1">ISO 13485:2016</div><div class="t2">Certified Quality System</div></div></div>
+        <div class="cert"><div class="ico2"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle></svg></div><div><div class="t1">CE Certified</div><div class="t2">European Conformity</div></div></div>
+        <div class="cert"><div class="ico2"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg></div><div><div class="t1">GMP Certified</div><div class="t2">Good Manufacturing Practice</div></div></div>
+      </div>
+    </div>
+    <div class="quality-media">
+      <img src="https://images.pexels.com/photos/6629391/pexels-photo-6629391.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Quality control inspection of instruments">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="bleed-light">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Contact Us</h2>
+      <p>We are here to assist you. Get in touch with us for inquiries, orders, or business partnerships.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-item">
+          <div class="ico3"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+          <div><div class="t1">Address</div><div class="t2">Plot # 123, Industrial Estate, Sundar–Raiwind Road, Lahore, Pakistan</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico3"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.35 1.79.68 2.63a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.45-1.45a2 2 0 012.11-.45c.84.33 1.73.56 2.63.68A2 2 0 0122 16.92z"></path></svg></div>
+          <div><div class="t1">Phone / WhatsApp</div><div class="t2">+92 322 7111052</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico3"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="M22 6l-10 7L2 6"></path></svg></div>
+          <div><div class="t1">Email</div><div class="t2">sabahatmirza37@gmail.com</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico3"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></div>
+          <div><div class="t1">Business Hours</div><div class="t2">Mon – Sat, 9:00 AM – 6:00 PM (PKT)</div></div>
+        </div>
+        <a href="#" id="contactWaBtn" class="btn btn-wa btn-block" style="margin-top:20px;">
+          <svg viewBox="0 0 32 32" width="17" height="17" fill="#fff"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.42.68 4.68 1.86 6.61L3 29l7.06-2.31A12.4 12.4 0 0016 28c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3zm0 22.7c-2.02 0-3.92-.57-5.53-1.55l-.4-.24-4.19 1.37 1.39-4.08-.26-.42a10.19 10.19 0 01-1.6-5.5c0-5.66 4.6-10.26 10.26-10.26s10.26 4.6 10.26 10.26-4.6 10.26-10.26 10.26z"></path><path d="M21.6 18.28c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.26-.25-.6-.5-.51-.68-.52-.18-.01-.38-.01-.58-.01-.2 0-.53.07-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.15 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.07-.13-.27-.2-.57-.35z"></path></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <form class="form-card" id="contactForm">
+        <h3>Send us a message</h3>
+        <p class="sub">Fill in your details and we'll get back to you — or send it straight to our inbox.</p>
+        <div class="field"><label for="cName">Your Name</label><input id="cName" placeholder="Full name" required></div>
+        <div class="field"><label for="cEmail">Email Address</label><input id="cEmail" type="email" placeholder="you@example.com" required></div>
+        <div class="field"><label for="cPhone">Phone Number</label><input id="cPhone" placeholder="+92 3xx xxxxxxx"></div>
+        <div class="field"><label for="cMsg">Your Message</label><textarea id="cMsg" placeholder="I wanna know more about it..." required></textarea></div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <a href="#" id="formWaBtn" class="btn btn-wa">Send via WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <svg viewBox="0 0 100 100" width="34" height="34"><path d="M10 12 L50 88 L58 88 L94 12 L78 12 L54 62 L26 12 Z" fill="#ffffff"/><path d="M62 12 L94 12 L58 88 L50 88 Z" fill="#2F8FD1"/></svg>
+        <span class="brand-text"><div class="name">VANGUARD</div><div class="sub">MEDICAL INSTRUMENTS</div></span>
+      </a>
+      <p class="tag">Precision · Quality · Trust — manufacturing surgical instruments for healthcare professionals worldwide.</p>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#products">Products</a></li><li><a href="#quality">Quality</a></li></ul>
+    </div>
+    <div>
+      <h5>Categories</h5>
+      <ul id="footerCats"></ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>Plot # 123, Industrial Estate, Sundar–Raiwind Road, Lahore, Pakistan</li>
+        <li>+92 322 7111052</li>
+        <li>sabahatmirza37@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Vanguard Medical Instruments. All rights reserved.</span>
+    <span>Precision · Quality · Trust</span>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FAB ============ -->
+<a href="#" id="fabWaBtn" class="wa-fab" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.42.68 4.68 1.86 6.61L3 29l7.06-2.31A12.4 12.4 0 0016 28c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3zm0 22.7c-2.02 0-3.92-.57-5.53-1.55l-.4-.24-4.19 1.37 1.39-4.08-.26-.42a10.19 10.19 0 01-1.6-5.5c0-5.66 4.6-10.26 10.26-10.26s10.26 4.6 10.26 10.26-4.6 10.26-10.26 10.26z"></path><path d="M21.6 18.28c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.26-.25-.6-.5-.51-.68-.52-.18-.01-.38-.01-.58-.01-.2 0-.53.07-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.15 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.07-.13-.27-.2-.57-.35z"></path></svg>
+</a>
+
+<!-- ============ OVERLAY / DRAWER / MODAL / TOAST ============ -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3>Your Cart</h3>
+    <button class="drawer-close" id="closeCart"><svg viewBox="0 0 24 24" fill="none" stroke="#0B2340" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot" style="display:none;">
+    <div class="total-row"><span>Estimated Total</span><span id="cartTotal">Rs 0</span></div>
+    <a href="#" id="checkoutWaBtn" class="btn btn-wa btn-block">Order via WhatsApp</a>
+    <a href="#" id="checkoutEmailBtn" class="btn btn-dark btn-block" style="margin-top:10px;">Email My Order</a>
+    <p class="checkout-note">WhatsApp opens a pre-filled order message to Vanguard. Email opens your mail app addressed to sabahatmirza37@gmail.com — review and hit send to place your order.</p>
+  </div>
+</aside>
+
+<div class="modal" id="productModal">
+  <div class="modal-card">
+    <div class="modal-media">
+      <button class="modal-close" id="closeModal"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <img id="modalImg" src="" alt="">
+    </div>
+    <div class="modal-info">
+      <span class="eyebrow product-cat" id="modalCat">Category</span>
+      <h2 id="modalName">Instrument name</h2>
+      <p class="desc" id="modalDesc"></p>
+      <ul class="spec-list" id="modalSpecs"></ul>
+      <div class="modal-price" id="modalPrice"></div>
+      <div class="modal-btns">
+        <div class="row">
+          <button class="btn btn-ghost btn-sm" id="modalAddCart" style="flex:1;">Add to Cart</button>
+          <button class="btn btn-primary btn-sm" id="modalBuyNow" style="flex:1;">Buy Now</button>
+        </div>
+        <a href="#" class="btn btn-wa" id="modalContactBtn">
+          <svg viewBox="0 0 32 32" width="16" height="16" fill="#fff"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.42.68 4.68 1.86 6.61L3 29l7.06-2.31A12.4 12.4 0 0016 28c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3z"></path></svg>
+          Contact Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+  <span id="toastMsg">Added to cart</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
